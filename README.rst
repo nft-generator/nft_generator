@@ -6,9 +6,6 @@ NFT Generator
 .. image:: https://img.shields.io/pypi/v/nft_generator.svg
         :target: https://pypi.python.org/pypi/nft_generator
 
-.. image:: https://img.shields.io/travis/nft-generator/nft_generator.svg
-        :target: https://travis-ci.org/nft-generator/nft_generator
-
 .. image:: https://readthedocs.org/projects/nft-generator/badge/?version=latest
         :target: https://nft-generator.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
