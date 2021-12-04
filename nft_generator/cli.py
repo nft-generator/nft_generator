@@ -3,13 +3,13 @@
 import click
 
 
-@click.command()
-def main(args=None):
-    """Console script for nft_generator"""
-    click.echo("Replace this message by putting your code into "
-               "nft_generator.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+@click.group()
+def main():
+    pass
 
+@click.command()
+def version():
+    print(__version__)
 
 if __name__ == "__main__":
     main()
