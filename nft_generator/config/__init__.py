@@ -1,8 +1,6 @@
-from pathlib import Path
+from nft_generator.config.base import BaseConfig
 
-class BaseConfig:
-    def __init__(self, data:str):
-        self.data = data
-        self.parse_data()
-    def load_config_from_file(filename:str):
-        Path
+
+from nft_generator.config.c_toml import TomlConfig
+from nft_generator.config.c_json import JsonConfig
+from nft_generator.config.c_yaml import YamlConfig
