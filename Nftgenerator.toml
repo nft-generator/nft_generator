@@ -1,0 +1,5 @@
+[general]
+output_dir="output"
+
+[general.logging]
+filename="generator.log"
