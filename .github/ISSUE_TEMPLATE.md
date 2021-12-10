@@ -1,6 +1,7 @@
-* NFT Generator version:
-* Python version:
-* Operating System:
+* NFT Generator version: 0.1.0
+* Python version: 3.10
+<!-- If it's linux, please specify the distro -->
+* Operating System: Linux
 
 ### Description
 
