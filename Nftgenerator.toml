@@ -1,6 +1,11 @@
 [general]
+# The directory that will contain the generated nfts 
 output_dir="output"
 
+# Parameters specific to logging 
 [general.logging]
-filename="generator.log"
+# The name of the file that will contain the logs 
+filename="generator.log" 
+
+# The format of the messages 
 format="%(name)s:%(levelname)s:%(message)s"
