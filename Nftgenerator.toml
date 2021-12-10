@@ -3,3 +3,4 @@ output_dir="output"
 
 [general.logging]
 filename="generator.log"
+format="%(name)s:%(levelname)s:%(message)s"
