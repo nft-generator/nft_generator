@@ -38,7 +38,7 @@ def load_config(filename):
 
 
 def setup_logging(config):
-    config = config["general"]["logging"] # get logging config
+    config = config["general"].get("logging", {}) # get logging config
     logging.basicConfig(
         filename=config.get("filename", "nftgenerator.log"),
         format=config.get("format", "%(name)s:%(levelname)s:%(message)s"),
@@ -50,9 +50,13 @@ def setup_logging(config):
     return logger
 
 
+def get_rarity(config):
+    config = config["rarity"] # get config
+
+
 def generate(*args, **kwargs):
     # Load config
     config = load_config(kwargs["config"]).parse_config()
-    
+
     # Setup logging
     logger = setup_logging(config)
