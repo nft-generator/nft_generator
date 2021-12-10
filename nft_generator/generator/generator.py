@@ -44,14 +44,15 @@ def setup_logging(config):
         format=config.get("format", "%(name)s:%(levelname)s:%(message)s"),
         level=logging.DEBUG,
     )
+    logger = logging.getLogger("nft_generator")
+    logger.debug("Logging is ready")  # Check
+    logger.info("Starting generate nft")  # Info
+    return logger
 
 
 def generate(*args, **kwargs):
     # Load config
     config = load_config(kwargs["config"]).parse_config()
-
+    
     # Setup logging
-    setup_logging(config)
-    logger = logging.getLogger("nft_generator")
-    logger.debug("Logging is ready")  # Check
-    logger.info("Starting generate nft")  # Info
+    logger = setup_logging(config)
