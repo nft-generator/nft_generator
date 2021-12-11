@@ -18,6 +18,13 @@ DEFAULT_CONFIG_FILENAME_WITHOUT_EXT = [
 # Use in load_config(filename)
 DEFAULT_CONFIG_FILENAME = []
 
+# Default rarity use in get_rarity()
+DEFAULT_RARITY = {
+    "C": "75",
+    "R": "20",
+    "XR": "5"
+}
+
 # Fill DEFAULT_CONFIG_FILENAME
 for file in DEFAULT_CONFIG_FILENAME_WITHOUT_EXT:
     for ext in FILENAME_EXT:
