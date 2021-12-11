@@ -11,7 +11,7 @@ FILENAME_EXT = ["yaml", "yml", "toml", "json"]
 DEFAULT_CONFIG_FILENAME_WITHOUT_EXT = [
     "nftgenerator",
     "NftGenerator",
-    "Nftgenerator",
+    "Nftgenerator", # It's the most used name with toml extension
     "generator",
     "Generator",
 ]
@@ -58,7 +58,13 @@ def setup_logging(config):
 
 
 def get_rarity(config):
-    config = config["rarity"] # get config
+    config = config.get("rarity", {}) # get config
+    if config == {}: # no config -> use default config DEFAULT_RARITY
+        #
+    else:
+        #
+
+
 
 
 def generate(*args, **kwargs):
