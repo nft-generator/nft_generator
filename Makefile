@@ -91,3 +91,6 @@ install: clean ## install the package to the active Python's site-packages
 
 sysinstall: clean
 	python setup.py install 
+
+install-fedora-requirements: clean
+	sudo dnf install -y poetry pip
