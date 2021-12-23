@@ -58,9 +58,9 @@ def setup_logging(config):
 
 
 def get_rarity(config):
-    config = config.get("rarity", {}) # get config
-    if config == {}: # no config -> use default config DEFAULT_RARITY
-        #
+    config = config.get("rarity", None) # get config
+    if config is None: # no config -> use default config DEFAULT_RARITY
+        
     else:
         #
 
