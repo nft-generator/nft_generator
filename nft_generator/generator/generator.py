@@ -20,9 +20,9 @@ DEFAULT_CONFIG_FILENAME = []
 
 # Default rarity use in get_rarity()
 DEFAULT_RARITY = {
-    "C": "75",
-    "R": "20",
-    "XR": "5"
+    "75": ["COMMUN", "C"],
+    "20": ["RARE", "R"],
+    "5": ["EXTRA RARE", "XR"]
 }
 
 # Fill DEFAULT_CONFIG_FILENAME
