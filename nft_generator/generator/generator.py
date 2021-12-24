@@ -3,6 +3,7 @@ import os
 from json import load
 
 from nft_generator.config import load_config_from_file
+from nft_generator.generator.rarity import Rarity
 
 # Supported extensions
 FILENAME_EXT = ["yaml", "yml", "toml", "json"]
@@ -20,6 +21,7 @@ DEFAULT_CONFIG_FILENAME = []
 
 # Default rarity use in get_rarity()
 DEFAULT_RARITY = {
+    # Value : ["NAME", "LETTER"]
     "75": ["COMMUN", "C"],
     "20": ["RARE", "R"],
     "5": ["EXTRA RARE", "XR"]
@@ -60,9 +62,8 @@ def setup_logging(config):
 def get_rarity(config):
     config = config.get("rarity", None) # get config
     if config is None: # no config -> use default config DEFAULT_RARITY
-        
-    else:
-        #
+        config = DEFAULT_RARITY
+    return Rarity(config)
 
 
 
