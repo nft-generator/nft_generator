@@ -1,6 +1,7 @@
 import logging
 import os
 from json import load
+from webbrowser import get
 
 from nft_generator.config import load_config_from_file
 from nft_generator.generator.rarity import Rarity
@@ -74,3 +75,5 @@ def generate(*args, **kwargs):
 
     # Setup logging
     logger = setup_logging(config)
+
+    rarity = get_rarity(config)
