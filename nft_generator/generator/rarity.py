@@ -5,6 +5,7 @@ class Rarity:
             70: ["commun", "C"],
         }
         """
+        self.rarity = {}
         for k, v in rarity.items():
             try:
                 self.add_rarity(k, v[0], v[1])
