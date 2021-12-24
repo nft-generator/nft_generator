@@ -76,4 +76,5 @@ def generate(*args, **kwargs):
     # Setup logging
     logger = setup_logging(config)
 
+    logger.debug("Get rarity")
     rarity = get_rarity(config)
